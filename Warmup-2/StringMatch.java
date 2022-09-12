@@ -1,5 +1,5 @@
 public class StringMatch {
-    public int StringMatchHS(String a, String b) {
+    public int StringMatchBaseline(String a, String b) {
         int count = 0;
         for (int i = 0; i < a.length() - 1 && i < b.length() - 1; ++i) {
             if (a.substring(i, i + 2).equals(b.substring(i, i + 2))) {
