@@ -1,5 +1,7 @@
+package warmup2;
+
 public class CountXX {
-    public int countXXBaseline(String str, int numX) {
+    public static int countXXBaseline(String str, int numX) {
         int count = 0;
         String cmpStr = "x".repeat(numX);
         for (int i = 0; i < str.length() - numX + 1; ++i) {
@@ -10,11 +12,11 @@ public class CountXX {
         return count;
     }
 
-    public int countXXBaseline(String str) {
+    public static int countXXBaseline(String str) {
         return countXXBaseline(str, 2);
     }
 
-    public int countXX(String str, int numX) {
+    public static int countXX(String str, int numX) {
         int count = 0;
         for (int i = 0; i < str.length() - numX + 1; ++i) {
             int oldI = i;
@@ -24,7 +26,7 @@ public class CountXX {
         return count;
     }
 
-    public int countXX(String str) {
+    public static int countXX(String str) {
         return countXX(str, 2);
     }
 }

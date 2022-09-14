@@ -1,5 +1,7 @@
+package warmup2;
+
 public class StringMatch {
-    public int StringMatchBaseline(String a, String b) {
+    public static int StringMatchBaseline(String a, String b) {
         int count = 0;
         for (int i = 0; i < a.length() - 1 && i < b.length() - 1; ++i) {
             if (a.substring(i, i + 2).equals(b.substring(i, i + 2))) {
@@ -9,7 +11,7 @@ public class StringMatch {
         return count;
     }
 
-    public int stringMatch(String a, String b) {
+    public static int stringMatch(String a, String b) {
         int count = 0;
         int len = Math.min(a.length(), b.length());
         for (int i = 0; i < len - 1; ++i) {
